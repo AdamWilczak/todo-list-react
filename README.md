@@ -1,7 +1,8 @@
 # Simple to do list
 https://adamwilczak.github.io/todo-list-react/
 
-![ogImage](https://adamwilczak.github.io/todo-list-react/public/ogImage.jpg)
+
+![Alt text](public/ogImage.jpg)
 
 # Getting Started with Create React App
 
