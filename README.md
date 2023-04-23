@@ -1,6 +1,8 @@
 # Simple to do list
 https://adamwilczak.github.io/todo-list-react/
 
+![ogImage](https://adamwilczak.github.io/todo-list-react/public/ogImage.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
