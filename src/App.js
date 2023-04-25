@@ -1,10 +1,10 @@
 
-import Buttons from "./buttons";
-import Form from "./form";
-import Tasks from "./tasks";
-import Section from "./section";
-import Header from "./header"
-import Container  from "./container";
+import Buttons from "./Buttons";
+import Form from "./Form";
+import Tasks from "./Tasks";
+import Section from "./Section";
+import Header from "./Header"
+import Container  from "./Container";
 
 const tasks = [
   { id: 1, content: "naprawic rower sąsiadowi ", done: false },

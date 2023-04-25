@@ -1,6 +1,6 @@
 import "./style.css"
 
-const Form = (props) => (
+const Form = () => (
   <form className="form">
     <input className="form__input" placeholder="What is your task?" />
     <button className="form__button">Add</button>

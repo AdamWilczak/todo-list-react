@@ -1,7 +1,7 @@
-const Container = (props) => (
+const Container = ({children}) => (
   <main className="container">
-    {props.children}
+    {children}
   </main>
-)
+);
 
 export default Container;
