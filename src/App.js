@@ -55,25 +55,27 @@ function App() {
     <Container>
       <Header title="Simple TODO list" />
       <Section title="Add new task"
-        body={<Form addNewTask={addNewTask} />} />
+        body={<Form addNewTask={addNewTask} />}
+      />
       <Section
-        title="Task list"
-        body={
-          <Tasks
-            tasks={tasks}
-            hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
-          />}
+              title="Task list"
+              body={
+                    <Tasks
+                      tasks={tasks}
+                      hideDone={hideDone}
+                      removeTask={removeTask}
+                      toggleTaskDone={toggleTaskDone}
+                    />
+                  }
         
         extraHeaderContent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-          />
-        }
+                      <Buttons
+                        tasks={tasks}
+                        hideDone={hideDone}
+                        toggleHideDone={toggleHideDone}
+                        setAllDone={setAllDone}
+                    />
+                  }
       />
     </Container>
   );
