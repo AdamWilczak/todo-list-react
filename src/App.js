@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Buttons from "./Buttons";
 import Form from "./Form";
 import Tasks from "./Tasks";
+import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
@@ -54,7 +54,8 @@ function App() {
   return (
     <Container>
       <Header title="Simple TODO list" />
-      <Section title="Add new task"
+      <Section
+        title="Add new task"
         body={<Form addNewTask={addNewTask} />}
       />
       <Section
