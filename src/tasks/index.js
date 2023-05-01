@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Tasks({ tasks, hideDone }) {
+function Tasks({ tasks, hideDone, removeTask }) {
   return (
     <ul className="tasksList">
       {tasks.map((task) => (
@@ -20,7 +20,9 @@ function Tasks({ tasks, hideDone }) {
           >
             {task.content}
           </span>
-          <button className=" tasksList__button tasksList__button--remove">
+          <button className=" tasksList__button tasksList__button--remove"
+            onClick={() => removeTask(task.id)}
+          >
             🗑
           </button>
         </li>
