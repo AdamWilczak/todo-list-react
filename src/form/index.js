@@ -3,10 +3,11 @@ import "./style.css"
 
 const Form = ({addNewTask}) => {
 
-  const [newTaskContent, setNewStateContent] = useState("");
+  const [newTaskContent, setNewTaskContent] = useState("");
   const onFormSubmit = (event) => {
     event.preventDefault();
     addNewTask(newTaskContent.trim());
+    setNewTaskContent("");
   }
 
 
@@ -15,7 +16,7 @@ const Form = ({addNewTask}) => {
       <input
         value={newTaskContent}
         className="form__input"
-        onChange={({target}) => setNewStateContent(target.value)}
+        onChange={({target}) => setNewTaskContent(target.value)}
       />
       
       <button className="form__button">Add</button>

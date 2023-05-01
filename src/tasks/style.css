@@ -23,6 +23,7 @@
     border: none;
     color: white;
     transition: 1s;
+    cursor: pointer;
 }
 
 .tasksList__button--done {
