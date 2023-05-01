@@ -17,6 +17,7 @@
     width: 80px;
     border-radius: 20px;
     transition: 0, 8 ease-in-out;
+    cursor: pointer;
 }
 
 .form__button:hover {
