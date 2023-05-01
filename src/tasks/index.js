@@ -20,7 +20,7 @@ function Tasks({ tasks, hideDone, removeTask, toggleTaskDone}) {
               task.done ? "tasksList__content--done" : ""
             }`}
           >
-            {task.content}
+           {task.id} - {task.content}
           </span>
           <button className=" tasksList__button tasksList__button--remove"
             onClick={() => removeTask(task.id)}
