@@ -2,7 +2,7 @@ import "./style.css";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAlldone }) => (
   <div className="buttons">
-    {tasks.lenght > 0 && (
+    {tasks.length > 0 && (
       <>
         <button onClick={toggleHideDone} className="buttons__button">
           {hideDone ? "Show" : "Hide"} done
