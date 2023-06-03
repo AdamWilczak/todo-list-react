@@ -15,10 +15,11 @@ const Form = ({addNewTask}) => {
     <form className="form" onSubmit={onFormSubmit}>
       <input
         value={newTaskContent}
+        minLength={3}
         className="form__input"
-        onChange={({target}) => setNewTaskContent(target.value)}
+        onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      
+
       <button className="form__button">Add</button>
     </form>
   );
