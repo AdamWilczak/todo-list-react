@@ -9,13 +9,13 @@ import { useEffect } from "react";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-   JSON.parse(localStorage.getItem("tasks")) || []
-  ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
- useEffect(() => {
-   localStorage.setItem("tasks", JSON.stringify(tasks));
- }, [tasks]);
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
 
   const toggleHideDone = () => {
