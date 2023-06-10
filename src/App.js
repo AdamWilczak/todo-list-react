@@ -5,13 +5,18 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
+import { useEffect } from "react";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
-    { id: 1, content: "naprawic rower sąsiadowi ", done: false },
-    { id: 2, content: "czochrać niedzwiedzia", done: false },
+   JSON.parse(localStorage.getItem("tasks")) || []
   ]);
+
+ useEffect(() => {
+   localStorage.setItem("tasks", JSON.stringify(tasks));
+ }, [tasks]);
+
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
