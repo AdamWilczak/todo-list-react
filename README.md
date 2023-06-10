@@ -2,7 +2,7 @@
 https://adamwilczak.github.io/todo-list-react/
 
 
-![Alt text](public/ogImage.jpg)
+![Alt text](public/ogImage.png)
 
 # Getting Started with Create React App
 
